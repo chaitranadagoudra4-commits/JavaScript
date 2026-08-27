@@ -1,0 +1,181 @@
+1. Variable--It is container used to store value.
+
+2. Three Keywords: 
+        1.var
+        2.let
+        3.const
+
+3. syntax to create variable using var:
+     var variableName = value;
+     EX: var age = 25;
+
+4. syntax to create variable using let:
+     let variableName = value;
+     EX: let marks = 98;
+
+5. syntax to create variable using const:
+     const variableName = value;
+     EX: const c = 30;
+
+6. declaration: creating a variable.
+     EX: let age; //here age is declared
+
+7. initialization: giving a variable its first value.
+     EX: let age = 25; //here 25 is the intial value 
+
+8. reassignment: changing the value of an existing variables.
+     EX: let age = 25;
+         age = 30; //here 25 is changed to 30
+
+9. redeclaration: declaring the same variable again
+     EX: var a = 10;
+         var a = 20;
+
+10. var keyword allows redeclaration
+
+11. var and let both keywords allows reassignment
+
+12. const keyword requires initialization when declared
+
+13. let age = 25;
+     let age -- declaration
+     = 25 -- initialization
+
+14. var a = 100;
+    console.log(a); ---the value of a is 100
+
+15. let number = 100;
+    number = 200;
+
+16. var a = 10;
+    console.log(a)---the o/p is 10
+
+17. var a = 10;
+    a = 20;
+    console.log(a) -----the o/p is 20
+
+18. var a = 10;
+    var a = 30;
+    console.log(a);-----the o/p is 30
+
+19. Write a var variable named name with the value "John".
+       var name = "John";
+
+20. Create a var variable named price with the value 500
+       var price = 500;
+
+21. Reassign price from 500 to 1000.
+       var price =500;
+       price = 1000;
+
+22. What will be the output?
+    var x = 50;
+    x = 100;
+    console.log(x); ----100
+
+23. Can a var variable be reassigned?
+      --YES
+    EX: var a = 10;
+        a = 20;
+
+24. Can a var variable be redeclared?
+       ---YES
+    EX: var a = 10;
+        var a = 20;
+
+25. Write an example of var redeclaration.
+    EX: var name = "John";
+        var name = "David";
+        console.log(name);
+        ----o/p: David
+
+26. Create a let variable named age with the value 25
+    let age = 25;
+
+27. What will be the output?
+    let age = 20;
+    age = 30;
+    console.log(age);
+    ----o/p is 30
+
+28. Can a let variable be reassigned?
+       ----YES
+    EX: let age = 20;
+        age = 30;
+
+29. Can a let variable be redeclared?
+      ------NO
+    EX: let age = 20;
+        let age = 30;
+        --This gives an error
+
+30. Find the error:
+    let name = "John";
+    let name = "David"; 
+    -----The same let  variable is being redeclared
+
+31. Create a let variable called city and assign "Chennai".
+    let city = "Chennai"
+
+32. Change the value of city to "Salem".
+    ----let city = "Chennai";
+        city = "Salem";
+
+33. What will be the output?
+    let x = 10;
+    x = 50;
+    console.log(x);
+    -----o/p is 50
+
+34. Write a let variable called salary with the value 25000.
+    ---let salary = 25000;
+
+35. Reassign salary to 30000.
+    ----let salary = 25000;
+        salary = 30000;
+
+36. Create a const variable called pi with the value 3.14.
+    ----const pi = 3.14
+
+37. Can a const variable be reassigned?
+     -----NO
+
+38. Can a const variable be redeclared?
+      -----NO
+
+39. What is wrong with this code?
+    const age;
+    age = 25; 
+    ----const must be initialized when it is declared
+EX: const age = 25; // this is the correct way to declare 
+
+40. What happens here?
+    const price = 500;
+    price = 1000; 
+    ----it gives an error because a const variable cannot be reassigned
+
+41. Create a const variable called country with the value "India".
+    ----const country = "India"
+
+42. What will be the output?
+    const x = 100;
+    console.log(x);
+    ---the o/p is 100
+
+43. Which keyword should you use if the value should not be reassigned?
+    ---const
+
+44. What is the difference between let and const?
+    1.let can be reassigned but const cannot be reassigned
+    2.let does not require immediate value but const requires a value when declared
+
+45. What is the difference between var and const?
+    1.var can be reassigned but const cannot be reassigned
+    2.var can be redclared but const cannot be redeclared
+    3.in var initialization is not compulsory but in const initialization is compulsory
+
+
+     
+
+
+
