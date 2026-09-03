@@ -437,11 +437,11 @@ let resultStudentName = prompt("Enter your name");
 let resultStudentAge = Number(prompt("Enter your age"));
 let resultStudentCity = prompt("Enter your city");
 
-let tamilMarks = Number(prompt("Enter Kannada marks"));
+let kannadaMarks = Number(prompt("Enter Kannada marks"));
 let englishMarks = Number(prompt("Enter English marks"));
 let mathsMarks = Number(prompt("Enter Maths marks"));
 
-let resultTotalMarks = tamilMarks + englishMarks + mathsMarks;
+let resultTotalMarks = kannadaMarks + englishMarks + mathsMarks;
 let resultAverageMarks = resultTotalMarks / 3;
 
 let resultGrade;
