@@ -56,6 +56,7 @@ function studentResult(name, department, mark1, mark2, mark3, mark4, mark5){
     console.log("Name :", employee.name);
     console.log("Role :", employee.role);
     console.log("Basic Salary :", basicSalary);
+    console.log("Bonus :", bonus);
     console.log("Final Salary :", finalSalary);
 }
 calculateSalary(employee);
@@ -101,9 +102,9 @@ console.log("Total Price :", totalPrice);
 
 // 5. Check whether any product costs more than ₹50,000
 let expensive = products.some((product) => {
-    return product.price > 5000;
+    return product.price > 50000;
 });
-console.log("Any product above 5000 :", expensive);
+console.log("Any product above 50000 :", expensive);
 
 
 // 6. Check whether every product has a price above ₹500
@@ -111,6 +112,98 @@ let above500 = products.every((product) => {
     return product.price > 500;
 });
 console.log("Every product above 500 :", above500);
+
+
+
+
+//Task 4 — Employee Management
+let employeeData = [
+    {
+        id: 101,
+        name: "Kavin",
+        role: "Frontend Developer",
+        salary: 40000
+    },
+    {
+        id: 102,
+        name: "Arun",
+        role: "Backend Developer",
+        salary: 45000
+    },
+    {
+        id: 103,
+        name: "Priya",
+        role: "HR Executive",
+        salary: 50000
+    },
+    {
+        id: 104,
+        name: "Rahul",
+        role: "Full Stack Developer",
+        salary: 60000
+    },
+    {
+        id: 105,
+        name: "Divya",
+        role: "UI Designer",
+        salary: 35000
+    },
+    {
+        id: 106,
+        name: "Karthi",
+        role: "Software Engineer",
+        salary: 55000
+    }
+];
+
+
+// 1. Display all employee names
+let allNames = employeeData.map((person) => {
+    return person.name;
+});
+console.log("Employee Names :", allNames);
+
+
+// 2. Display employees earning above ₹40,000
+let highSalary = employeeData.filter((person) => {
+    return person.salary > 40000;
+});
+console.log("Employees earning above 40000 :", highSalary);
+
+
+// 3. Find employee with ID 103
+let selectedEmployee = employeeData.find((person) => {
+    return person.id === 103;
+});
+console.log("Employee with ID 103 :", selectedEmployee);
+
+
+// 4. Calculate total salary
+let salaryTotal = employeeData.reduce((total, person) => {
+    return total + person.salary;
+}, 0);
+console.log("Total Salary :", salaryTotal);
+
+
+// 5. Find highest-paid employee
+let topEmployee = employeeData.reduce((highest, person) => {
+    return person.salary > highest.salary ? person : highest;
+});
+console.log("Highest Paid Employee :", topEmployee);
+
+
+// 6. Sort employees from highest salary to lowest
+let salaryOrder = [...employeeData].sort((a, b) => {
+    return b.salary - a.salary;
+});
+console.log("Employees sorted by salary :", salaryOrder);
+
+
+// 7. New array containing only employee names
+let nameList = employeeData.map((person) => {
+    return person.name;
+});
+console.log("Names Only :", nameList);
 
 
 
@@ -276,7 +369,7 @@ console.log("Last Character :",sentence.slice(-1));
 
 let words = sentence.split(" ");
 console.log("Number of Words :",words.length);
-console.log("After Replace :",sentence.replace("JavaScript", "python"));
+console.log("After Replace :",sentence.replace("JavaScript", "Python"));
 console.log("Sentence Array :",sentence.split(" "));
 
 
